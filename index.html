@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./src/css/styles.css"/>
+    <title>Ecommerce-Shop</title>
+  </head>
+  <body>
+    <div class="load" id="load">
+      <div class="img__load">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon"> <title>Academlo Logo</title> <g> <g><path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"> </path> </g> </g> </svg>
+      </div>
+    </div>
+    <header class="header__navbar">
+      <nav class="navbar">
+        <div class="content__logo">
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon"> <title>Academlo Logo</title> <g> <g> <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> --> <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"> </path> </g> </g> </svg>
+          </div>
+          <span class="menu__STORE">STORE</span>
+        </div>
+        <ul class="menu">
+          <li class="menu__Home"><a href="#Home">Home</a></li>
+          <li class="menu__Products"><a href="#Products">Products</a></li>
+          <i class="bx bx-x"></i>
+        </ul>
+        <div class="navbar__icons">
+            <i class="bx bx-moon change-theme" id="theme-button"></i></i>
+          <div class="shop__btn">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+          <div class="grid__btn">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container maxContent">
+      <section class="home" id="Home">
+        <div class="home__img">
+          <img src="./src/static/img/featured2.png" alt="img home" />
+        </div>
+
+        <div class="home__info">
+          <h2>
+            New Sweatshirt <br />
+            COLLECTIONS 2023
+          </h2>
+
+          <h4>
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+            imported from the 2022 series, with a modern design
+          </h4>
+
+          <p class="home__info-price">$14.00</p>
+
+          <div class="home__info-buttons">
+            <button class="btn">Discover</button>
+            <button class="btn">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ecommerce" id="Products">
+        <div class="ecommerce__filters">
+          <div class="filter" data-filter="all">
+            <h4>Show All</h4>
+            <p>show all products</p>
+          </div>
+          <div class="filter" data-filter=".red">
+            <h4>Hoodies</h4>
+            <p>3 products</p>
+          </div>
+          <div class="filter" data-filter=".black">
+            <h4>Shirts</h4>
+            <p>4 products</p>
+          </div>
+          <div class="filter" data-filter=".white">
+            <h4>Sweatshirts</h4>
+            <p>4 products</p>
+          </div>
+        </div>
+
+        <div class="ecommerce__products">
+          <div class="product red">
+            <div class="product__img">
+              <img src="./src/static/img/featured1.png" alt="featured1" />
+            </div>
+            <div class="product__info">
+              <div class="add__cart">
+                <span>+</span>
+              </div>
+              <p>$14.00 <span>| Stock: 10</span></p>
+              <p>Hoodies</p>
+            </div>
+          </div>
+
+          <div class="product black">
+            <div class="product__img">
+              <img src="./src/static/img/featured2.png" alt="featured2" />
+            </div>
+            <div class="product__info">
+              <div class="add__cart">
+                <span>+</span>
+              </div>
+              <p>$24.00 <span>| Stock: 15</span></p>
+              <p>Shirts</p>
+            </div>
+          </div>
+
+          <div class="product white">
+            <div class="product__img">
+              <img src="./src/static/img/featured3.png" alt="featured3" />
+            </div>
+            <div class="product__info">
+              <div class="add__cart">
+                <span>+</span>
+              </div>
+              <p>$14.00 <span>| Stock: 20</span></p>
+              <p>Sweatshirts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__links maxContent">
+        <div class="footer_link">
+          <h3>Our information</h3>
+          <ul>
+            <li><a href="#">Zipaquira - Colombia</a></li>
+          </ul>
+        </div>
+        <div class="footer_link">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Customer Suppor</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Copy Right</a></li>
+          </ul>
+        </div>
+        <div class="footer_link">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Sweatshirts</a></li>
+          </ul>
+        </div>
+        <div class="footer_link">
+          <h3>Social</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p><small>© DuvanObando. All rigths reserved</small></p>
+    </footer>
+
+    <script src="./src/js/mixitup.min.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
