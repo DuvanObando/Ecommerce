@@ -219,7 +219,7 @@ a {
 
 .home__img {
     background-color: var(--first-color);
-    width: 300px;
+    width: 280px;
     height: 430px;
     align-self: flex-end;
     display: flex;
